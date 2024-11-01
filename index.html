@@ -13,26 +13,20 @@
   <body>
     <h1>Allow Popups</h1>
     <script>
-      /* <![CDATA[ */
-
       function imwatchingyou() {
-        var win = window.open();
-        var url = "https://lobotomy-hub.jimdofree.com/";
+        var win = window.open("about:blank");
         var iframe = win.document.createElement("iframe");
         iframe.style.width = "100%";
         iframe.style.height = "100%";
         iframe.style.border = "none";
-        iframe.src = url;
+        iframe.src = "https://Abnormal-website.jimdofree.com/";
         win.document.body.appendChild(iframe);
         window.location.href = "https://classroom.google.com";
-
-        setTimeout(function () {
-          window.close();
-        }, 1000); // Close after 1 second to allow redirect to Google
+        win.document.body.style.margin = "0";
+        win.document.body.style.padding = "0";
+        win.document.body.style.background = "none";
       }
       imwatchingyou();
-
-      /*]]>*/
     </script>
   </body>
 </html>
